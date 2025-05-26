@@ -18,7 +18,7 @@ public abstract class Character {
     public abstract void greeting();
 
     public String introduce(){
-        return "Hi! Nice to meet you! I’m " + this.name + ". I’m " + this.height + " meters tall and from the planet " + this.planet + ". I fought in the " + this.warparticipatedin +  ". Thanks to technology, we can communicate now—my native language is " + this.language + "!";
+        return "I’m " + this.height + " meters tall and from the planet " + this.planet + ".\nI fought in the " + this.warparticipatedin +  ".\nThanks to technology, we can communicate now — I speak " + this.language + "!";
     }
 
     public String getName() {
