@@ -5,9 +5,9 @@ public abstract class Character {
     private String planet;
     private String language;
     private String warparticipatedin;
-    private int height;
+    private double height;
 
-    public Character(String name, String planet, String language, String warparticipatedin, int height) {
+    public Character(String name, String planet, String language, String warparticipatedin, double height) {
         this.name = name;
         this.planet = planet;
         this.language = language;
@@ -15,8 +15,10 @@ public abstract class Character {
         this.height = height;
     }
 
+    public abstract void greeting();
+
     public String introduce(){
-        return "Hi! Nice to meet you! I’m " + this.name + ". I’m " + this.height + " meters tall and from the planet " + this.planet + ". I fought in the " + this.warparticipatedin +  ". Thanks to technology, we can communicate now—my native language is " + this.language + "!"
+        return "Hi! Nice to meet you! I’m " + this.name + ". I’m " + this.height + " meters tall and from the planet " + this.planet + ". I fought in the " + this.warparticipatedin +  ". Thanks to technology, we can communicate now—my native language is " + this.language + "!";
     }
 
     public String getName() {
@@ -51,12 +53,11 @@ public abstract class Character {
         this.warparticipatedin = warparticipatedin;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return this.height;
     }
 
     public void setHeight(int height) {
         this.height = height;
     }
-}
 }
