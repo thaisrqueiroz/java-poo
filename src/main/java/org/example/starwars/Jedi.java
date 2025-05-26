@@ -15,16 +15,21 @@ public class Jedi  extends Character implements ForceSensitive {
 
     @Override
     public void greeting(){
-        System.out.println("May the force be with you. I'm " + getName());
+        System.out.println("May the force be with you. I'm " + getName() + ".");
+    }
+
+    @Override
+    public void lightsaber(){
+        System.out.println("My lightsaber is " + lightsaber + ".");
     }
 
     @Override
     public void master(){
-        System.out.println("My master was " + master);
+        System.out.println("My master was " + master + ".");
     }
 
     @Override
     public void padawan(){
-        System.out.println("My padawan was " + padawan);
+        System.out.println("My padawan was " + padawan + ".");
     }
 }
