@@ -6,18 +6,25 @@ public class Jedi  extends Character implements ForceSensitive {
     private String master;
     private String padawan;
 
-    public Jedi(String name, String planet, String languaje, String warparticipatedin, int height, String lightsaber, String master, String padawan){
-        this lightsaber = lightsaber;
-        super(name, languaje, warparticipatedin, height);
+    public Jedi(String name, String planet, String language, String warparticipatedin, double height, String lightsaber, String master, String padawan){
+        super(name, planet, language, warparticipatedin, height);
+        this.lightsaber = lightsaber;
+        this.master = master;
+        this.padawan = padawan;
     }
 
     @Override
     public void greeting(){
-        System.out.println("Que la fuerza te acompañe. Soy " + getName());
+        System.out.println("May the force be with you. I'm " + getName());
     }
 
     @Override
-    public void relationships(){
-        System.out.println("Mi maestro fue " + master + "y mi padawan fue " + padawan);
+    public void master(){
+        System.out.println("My master was " + master);
+    }
+
+    @Override
+    public void padawan(){
+        System.out.println("My padawan was " + padawan);
     }
 }
