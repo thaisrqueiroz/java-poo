@@ -13,7 +13,6 @@ public class Main {
                 new Sith("Sheev Palpatine, also known by my Sith name, Darth Sidious", "Naboo", "Balc", "Clone Wars", 1.78, "red", "Darth Plagueis", "Anakin Skywalker"),
                 new Jedi("Mace Windu", "Haruun Kal", "Galactic Basic Standard", "Clone Wars", 1.92, "purple", "Cyslin Myr and Yoda", "Depa Billaba"),
                 new Resistance("Gial Ackbar", "Mon Cala", "Gial'ic", "the Clone Wars, the Galactic Civil War and the Cold War", 1.8),
-
         };
 
         System.out.println("💫✨ A long time ago in a galaxy far, far away...");
