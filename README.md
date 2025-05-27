@@ -23,20 +23,6 @@ Overridden methods provide type-specific behavior
 ### Interfaces
 ForceSensitive defines force-related capabilities
 Implemented by force-wielding characters
-## Project Structure
-```bash
-src/
-├── main/
-│   ├── java/
-│   │   ├── org.example.starwars/
-│   │   │   ├── Character.java       # Abstract base class
-│   │   │   ├── ForceSensitive.java  # Interface for force users
-│   │   │   ├── Jedi.java            # Jedi implementation
-│   │   │   ├── Sith.java            # Sith implementation
-│   │   │   └── Resistance.java      # Resistance fighters
-│   │   └── Main.java                # Demonstration program
-└── README.md                        # This documentation
-```
 ## Key Features
 ### Character System:
 - Base Character class with common attributes (name, planet, language, height)
